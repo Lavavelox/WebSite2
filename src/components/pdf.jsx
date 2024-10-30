@@ -124,7 +124,7 @@ const PDF = ({ i }) => {
     }, []);
     return (
         <div className="min-w-full height-[30px]">
-            {isCliente && <PDFDownloadLink document={
+            {isCliente && <PDFDownloadLink document={    
                 <Document >
                     <Page size={227} style={{ boxSizing: 'border-box', padding: '2.5mm', position: 'relative' }}>
                         <View>
