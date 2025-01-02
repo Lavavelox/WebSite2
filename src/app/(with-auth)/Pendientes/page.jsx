@@ -272,7 +272,7 @@ function Home() {
                                         }
                                     </td>
                                     <td className="min-w-[300px] px-3 py-4  text-gray-900 ">
-                                        {Object.values(i?.servicios).map((el, index) => <li key={index}>
+                                        {i?.servicios && i?.servicios !== undefined && Object.values(i?.servicios).map((el, index) => <li key={index}>
                                             {`${el['nombre 1']} ${'('}${el['cantidad']}${')'}`} <br />
                                             {el['observacion'] !== undefined && `${'['}${el['observacion']}${']'}`}
                                         </li>)}
